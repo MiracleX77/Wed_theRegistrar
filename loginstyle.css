@@ -1,0 +1,90 @@
+/* -------------Login----------------- */
+.wow {
+    width: 100px;
+  }
+body{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+.main_container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: #FFF;   
+  } 
+.sub_container1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+.sub_container2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  } 
+.container_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 250px;
+    padding-left: 0px;
+    width: 50%;
+    height: 100%;
+  }
+.nametu{
+    color: #ff5757;
+    font-family: 'Prompt', sans-serif;
+    font-size: 80px
+  }
+#username{
+    position: relative;
+    height: 60px;
+    width: 450px;
+    min-width: 300px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    padding-left: 20px;
+    border:none;
+    font-family: 'Prompt', sans-serif;
+  }
+#password{
+    position: relative;
+    height: 60px;
+    width: 450px;
+    min-width: 300px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    padding-left: 20px;
+    border:none;
+    font-family: 'Prompt', sans-serif;
+}
+.submit-block{
+    margin: 20 px 0;
+    padding: 15px 0 ;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    font-family: 'Prompt', sans-serif;
+}
+.login_img{
+    position: absolute;
+    max-width: 45%;
+    min-width: 30%;
+    max-height: 90%;
+    min-height: 30%;
+    margin-right: 5px;
+}

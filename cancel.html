@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="cancelstyle.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo_name">TU-Enroll</a>
+    <ul class="navi">
+      <li><a class="logout" href="login.html" onclick="Logout()">Log out</a></li>
+      <li><img class="logo_pro" src="image/profile_logo.png"></li>
+      <li><div class="nametag" >
+        <p id="idc">รหัสนักศึกษา</p>
+        <p id="name">ชื่อ - นามสกุล</p>
+      </div></li>
+    </ul>
+  </header>
+  
+  <div class="suggest_container">  
+  </div>
+
+  <div id="main_container">
+  </div>
+  
+  <button class="Button1" onclick="window.location.href='cancelcomfirm.html',cancel_comfirm()">ยกเลิกการขอโควตา</button>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="edit.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo_name">TU-Enroll</a>
+    <ul class="navi">
+      <li><a class="logout" href="login.html">Log out</a></li>
+      <li><img class="logo_pro" src="image/profile_logo.png"></li>
+      <li><div class="nametag">
+        <p class="idc">รหัสนักศึกษา</p>
+        <p class="name">ชื่อ - นามสกุล</p>
+      </div></li>
+    </ul>
+  </header>
+  <div class="head_space"></div>
+
+  <div class="add_container">
+    <div class="add_card">
+      <h4>แก้ไขข้อมูล</h4>
+      <div class="add_form">  
+        <div class="form">
+          <label>รหัสวิชา</label>
+          <input type="text">
+        </div> 
+        <div class="form">
+          <label>ชื่อวิชา</label>
+          <input type="text">
+        </div> 
+        <div class="form">
+          <label>section</label>
+          <input type="text">
+        </div> 
+        <div class="form">
+          <label>วันที่เรียน</label>
+          <select id="days">
+            <option value="day">จ</option>
+            <option value="day">อ</option>
+            <option value="day">พ</option>
+            <option value="day">พฤ</option>
+            <option value="day">ศ</option>
+            <option value="day">ส</option>
+            <option value="day">อา</option>
+          </select>
+        </div> 
+        <div class="form">
+          <label>เวลาเรียน</label>
+          <div class="time_learn">
+            <input type="time">
+            <p>ถึง</p>
+            <input type="time">
+          </div>
+        </div>
+        <div class="form">
+          <label>จำนวนคนสูงสุด</label>
+          <input id="max_student" type="text">
+        </div> 
+        <div class="form">  
+          <label>วันสุดท้ายที่ลงทะเบียนได้</label>
+          <input type="date">
+        </div> 
+      </div>
+      <div class="add_btn_container">
+        <button class="add_btn" onclick="window.location.href='admin.html'">แก้ไข</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

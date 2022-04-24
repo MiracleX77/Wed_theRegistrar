@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="admincss.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="slide.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo_name">TU-Enroll</a>
+    <ul class="navi">
+      <li><a class="logout" href="login.html">Log out</a></li>
+      <li><img class="logo_pro" src="image/profile_logo.png"></li>
+      <li><div class="nametag">
+        <p class="idc">รหัสนักศึกษา</p>
+        <p class="name">ชื่อ - นามสกุล</p>
+      </div></li>
+    </ul>
+  </header>
+  <div class="head_space"></div>
+  <div class="suggest_container">  
+    <div class="slider">
+      <div class="slide active">
+        <img src="image/cook.jpg" alt="">
+        <div class="info">
+          <h2>TU456</h2>
+          <p>เพลิดเพลินไปกับการทำอาหาร</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="image/evi.jpg" alt="">
+        <div class="info">
+          <h2>EV101</h2>
+          <p>อนุรักษ์ รักษา ผืนป่าไม้</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="image/meta.jpg" alt="">
+        <div class="info">
+          <h2>MV999</h2>
+          <p>สร้างโลกเหนือจินตนาการ</p>
+        </div>
+      </div>
+      <div class="navigationop">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="navigation">
+    <ul>
+      <li><a class="btn" href="add.html">เพิ่มรายวิชา </a></li>
+      <li><a class="btn" href="delete.html">ลบรายวิชา</a></li>
+    </ul>
+    <div class="search_container">
+      <img class="search_icon" src="image/Search_icon.png">
+      <input class="searchbar" type="text" id="search-item" placeholder="Search..." onkeyup="search()">
+    </div>
+  </div>
+  <div class="main_container" id="item-list"><div class="card_content">
+    <div class="content1">
+     <p class="tag_name">TU101</p>
+     <p class="section">760001</p>
+   </div>
+   <div class="content2">
+     <p>น้องเป็นสาวไหน</p>
+     <p class="time_learn">12:00-13:00</p>  
+   </div>
+   <div class="content3">
+     <p>0/99</p> 
+     <ul class="tm">
+       <div class="time_container">
+         <p class="time_countdown">1D:08:22:31</p>
+         <p>close</p>
+       </div>
+       <li><button class="adjust" onclick="window.location.href='edit.html'">แก้ไข</button></li>
+     </ul>
+   </div>
+ </div>
+ 
+ <div class="card_content">
+   <div class="content1">
+     <p class="tag_name">TU555</p>
+     <p class="section">760001</p>
+   </div>
+   <div class="content2">
+     <p>บันเทิงสุขสรรค์</p>
+     <p class="time_learn">12:00-13:00</p>  
+   </div>
+   <div class="content3">
+     <p>0/99</p> 
+     <ul class="tm">
+       <div class="time_container">
+         <p class="time_countdown">1D:08:22:31</p>
+         <p>close</p>
+       </div>
+       <li><button class="adjust" onclick="window.location.href='edit.html'">แก้ไข</button></li>
+     </ul>
+   </div>
+ </div>
+ 
+ <div class="card_content">
+   <div class="content1">
+     <p class="tag_name">EV101</p>
+     <p class="section">760001</p>
+   </div>
+   <div class="content2">
+     <p>อนุรักษ์สิ่งแวดล้อม</p>
+     <p class="time_learn">12:00-13:00</p>  
+   </div>
+   <div class="content3">
+     <p>0/99</p> 
+     <ul class="tm">
+       <div class="time_container">
+         <p class="time_countdown">1D:08:22:31</p>
+         <p>close</p>
+       </div>
+       <li><button class="adjust" onclick="window.location.href='edit.html'">แก้ไข</button></li>
+     </ul>
+   </div>
+ </div>
+ 
+ <div class="card_content">
+   <div class="content1">
+     <p class="tag_name">MV999</p>
+     <p class="section">760001</p>
+   </div>
+   <div class="content2">
+     <p>METAVERSE</p>
+     <p class="time_learn">12:00-13:00</p>  
+   </div>
+   <div class="content3">
+     <p>0/99</p> 
+     <ul class="tm">
+       <div class="time_container">
+         <p class="time_countdown">1D:08:22:31</p>
+         <p>close</p>
+       </div>
+       <li><button class="adjust" onclick="window.location.href='edit.html'">แก้ไข</button></li>
+     </ul>
+   </div>
+ </div>
+ 
+ <div class="card_content">
+   <div class="content1">
+     <p class="tag_name">TU456</p>
+     <p class="section">760001</p>
+   </div>
+   <div class="content2">
+     <p>คหกรรม</p>
+     <p class="time_learn">12:00-13:00</p>  
+   </div>
+   <div class="content3">
+     <p>0/99</p> 
+     <ul class="tm">
+       <div class="time_container">
+         <p class="time_countdown">1D:08:22:31</p>
+         <p>close</p>
+       </div>
+       <li><button class="adjust" onclick="window.location.href='edit.html'">แก้ไข</button></li>
+     </ul>
+   </div>
+</div>
+</div>
+<script src="slide.js"></script>
+<script src="search.js"></script>
+</body>
